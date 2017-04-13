@@ -1,0 +1,26 @@
+{
+  "name": "webpack-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:client": "concurrently \"tsc -w\" \"webpack --config webpack/webpack.config.js -w\" \"lite-server\"",
+    "build:client": "webpack --config webpack/webpack.config.js",
+    "start": "npm run watch:client"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "^1.6.14",
+    "@types/angular-ui-router": "^1.1.36",
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2"
+  }
+}
